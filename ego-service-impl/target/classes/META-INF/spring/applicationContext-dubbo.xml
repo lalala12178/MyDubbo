@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://dubbo.apache.org/schema/dubbo
+		http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+	<dubbo:application name="dubbo-service"/>
+
+	<dubbo:registry address="122.51.18.35:2181" protocol="zookeeper"></dubbo:registry>
+<!--	<dubbo:registry address="localhost:2181" protocol="zookeeper"></dubbo:registry>-->
+
+
+	<dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
+	
+	<dubbo:service interface="com.ego.dubbo.service.TbItemDubboService" ref="aaa"></dubbo:service>
+	<bean id="aaa" class="com.ego.dubbo.service.impl.TbItemDubboServiceImpl"></bean>
+
+	<!-- 商品类目服务 -->
+	<dubbo:service interface="com.ego.dubbo.service.TbItemCatDubboService" ref="tbItemCatDubboServiceImpl"></dubbo:service>
+	<bean id="tbItemCatDubboServiceImpl" class="com.ego.dubbo.service.impl.TbItemCatDubboServiceImpl"></bean>
+	<!-- 商品描述 -->
+	<dubbo:service interface="com.ego.dubbo.service.TbItemDescDubboService" ref="tbItemDescDubboServiceImpl"></dubbo:service>
+	<bean id="tbItemDescDubboServiceImpl" class="com.ego.dubbo.service.impl.TbItemDescDubboServiceImpl"></bean>
+
+	<!-- 规格参数 -->
+	<dubbo:service interface="com.ego.dubbo.service.TbItemParamDubboService" ref="tbItemParamDubboServiceImpl"></dubbo:service>
+	<bean id="tbItemParamDubboServiceImpl" class="com.ego.dubbo.service.impl.TbItemParamDubboServiceImpl"></bean>
+	
+	<!-- 同时把spring配置文件也加载 -->
+	<import resource="../../applicationContext.xml"/>
+</beans>
+

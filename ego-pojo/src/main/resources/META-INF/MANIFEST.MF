@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Class-Path: javassist-3.20.0-GA.jar jsr305-3.0.2.jar commons-io-2.2.ja
+ r audience-annotations-0.5.0.jar curator-client-4.2.0.jar j2objc-anno
+ tations-1.1.jar commons-cli-1.2.jar failureaccess-1.0.1.jar jstl-1.2.
+ jar mybatis-spring-2.0.3.jar curator-recipes-4.2.0.jar dubbo-2.7.3.ja
+ r zookeeper-3.5.4-beta.jar spring-aop-5.2.2.RELEASE.jar animal-sniffe
+ r-annotations-1.17.jar listenablefuture-9999.0-empty-to-avoid-conflic
+ t-with-guava.jar checker-qual-2.5.2.jar slf4j-log4j12-1.8.0-beta4.jar
+  spring-tx-5.2.2.RELEASE.jar spring-beans-5.2.2.RELEASE.jar curator-f
+ ramework-4.2.0.jar snakeyaml-1.20.jar spring-web-5.2.2.RELEASE.jar ne
+ tty-3.10.6.Final.jar spring-expression-5.2.2.RELEASE.jar error_prone_
+ annotations-2.2.0.jar commons-pool2-2.4.2.jar mysql-connector-java-8.
+ 0.18.jar jackson-databind-2.10.1.jar spring-webmvc-5.2.2.RELEASE.jar 
+ gson-2.8.5.jar jackson-core-2.10.1.jar aspectjweaver-1.9.5.jar common
+ s-net-3.6.jar commons-fileupload-1.3.1.jar guava-27.0.1-jre.jar jacks
+ on-annotations-2.10.1.jar spring-jdbc-5.2.2.RELEASE.jar log4j-1.2.17.
+ jar protobuf-java-3.6.1.jar mybatis-3.5.3.jar spring-jcl-5.2.2.RELEAS
+ E.jar spring-context-5.2.2.RELEASE.jar netty-all-4.1.25.Final.jar jsq
+ lparser-0.9.5.jar pagehelper-4.1.6.jar spring-core-5.2.2.RELEASE.jar 
+ slf4j-api-1.8.0-beta4.jar jedis-2.9.0.jar
+Main-Class: com.ego.main.main
+
